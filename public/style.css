@@ -112,3 +112,80 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.transcript-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  max-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.transcript-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.transcript-content {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  max-height: 60vh;
+  height: 60vh;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transcript-content p {
+  margin: 0 0 8px 0;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transcript-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.export-btn, .clear-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+}
+
+.export-btn {
+  background-color: #50cddd;
+}
+
+.export-btn:hover {
+  background-color: #6bd6e1;
+}
+
+.clear-btn {
+  background-color: #dd5050;
+}
+
+.clear-btn:hover {
+  background-color: #e16b6b;
+}
+
+.recording .transcript-container {
+  display: flex;
+}
